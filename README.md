@@ -1,2 +1,2 @@
 # RTDuxCycler_Python
-New DuxCycler System (Python)
+New RTDuxCycler System (Python)
