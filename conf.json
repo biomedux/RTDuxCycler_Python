@@ -1,0 +1,71 @@
+{
+    "_comment_cam_name": "Arducam_IMX298, Basler_Mono, Basler_Color",
+    "cam_name": "Arducam_IMX298",
+    "cam_settings":{
+        "Arducam_IMX298":{
+            "width": 4656,
+            "height": 3496,
+            "exposure": -2,
+            "focus": 750,
+            "gain": 0,
+            "gamma": 72,
+            "whitebalance": 4000,
+            "low_light_compensation": false,
+            
+            "exe_filename": "VideoProcAmp_test.exe",
+            
+            "centers": [[1482, 858], [1955, 863], [2432, 871],[2904, 878], [3367, 890],
+                        [1475, 1332],[1948, 1335],[2423, 1346],[2894, 1352],[3362, 1357],
+                        [1473, 1807],[1947, 1811],[2418, 1816],[2888, 1821],[3354, 1829],
+                        [1467, 2275],[1942, 2281],[2411, 2285],[2879, 2291],[3344, 2297],
+                        [1470, 2745],[1938, 2751],[2407, 2753],[2873, 2752],[3333, 2747]],
+            
+            "rad": 50
+        }
+    },
+
+    "optic":{
+        "filter_wheel":{
+            "coarse_speed": 300,
+            "fine_speed": 50,
+            "max_speed": 1000,
+            "accel": 1000,
+            "filter_position":{
+                "FAM":25,
+                "HEX":-290,
+                "ROX":-600,
+                "CY5":-900
+            }
+        },
+
+        "servo_motor":{
+            "_comment_please": "add"
+        },
+        
+        "fluoresences" : ["FAM", "HEX", "ROX", "CY5"],
+        
+        "_comment_channel": "Channel used for analysis with color img (0: blue, 1: green, 2:red)",
+        "channel":{
+            "FAM": 1,
+            "HEX": 1,
+            "ROX": 2,
+            "CY5": 2
+        },
+
+        "_comment_led": "led pwms for each channels(0~255)",
+        "led": {
+            "FAM": 200,
+            "HEX": 200,
+            "ROX": 200,
+            "CY5": 200
+        },
+
+        "_comment_led_time": "Sleep time(sec) when LED's on",
+        "led_time" : {
+            "-1" : 1.2,
+            "-2" : 0.8,
+            "-3" : 1,
+            "-4" : 0.75
+        }
+    }
+}
